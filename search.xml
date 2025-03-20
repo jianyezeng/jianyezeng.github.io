@@ -70,9 +70,9 @@
       
         <tags>
             
-            <tag> C++ </tag>
-            
             <tag> leetcode </tag>
+            
+            <tag> C++ </tag>
             
             <tag> 栈与队列 </tag>
             
@@ -151,9 +151,9 @@
             
             <tag> 深度学习 </tag>
             
-            <tag> 神经网络 </tag>
-            
             <tag> YOLO </tag>
+            
+            <tag> 神经网络 </tag>
             
         </tags>
       
@@ -180,9 +180,9 @@
             
             <tag> 深度学习 </tag>
             
-            <tag> ResNet50 </tag>
-            
             <tag> 神经网络 </tag>
+            
+            <tag> ResNet50 </tag>
             
             <tag> 分类模型 </tag>
             
@@ -209,9 +209,9 @@
       
         <tags>
             
-            <tag> C++ </tag>
-            
             <tag> leetcode </tag>
+            
+            <tag> C++ </tag>
             
             <tag> 栈与队列 </tag>
             
@@ -238,9 +238,9 @@
       
         <tags>
             
-            <tag> C++ </tag>
-            
             <tag> leetcode </tag>
+            
+            <tag> C++ </tag>
             
             <tag> 栈与队列 </tag>
             
@@ -292,9 +292,9 @@
       
         <tags>
             
-            <tag> C++ </tag>
-            
             <tag> leetcode </tag>
+            
+            <tag> C++ </tag>
             
             <tag> 栈与队列 </tag>
             
@@ -321,9 +321,9 @@
       
         <tags>
             
-            <tag> C++ </tag>
-            
             <tag> leetcode </tag>
+            
+            <tag> C++ </tag>
             
             <tag> 栈与队列 </tag>
             
@@ -350,9 +350,9 @@
       
         <tags>
             
-            <tag> C++ </tag>
-            
             <tag> leetcode </tag>
+            
+            <tag> C++ </tag>
             
             <tag> 栈与队列 </tag>
             
@@ -404,9 +404,9 @@
       
         <tags>
             
-            <tag> C++ </tag>
-            
             <tag> leetcode </tag>
+            
+            <tag> C++ </tag>
             
         </tags>
       
@@ -431,9 +431,9 @@
       
         <tags>
             
-            <tag> C++ </tag>
-            
             <tag> leetcode </tag>
+            
+            <tag> C++ </tag>
             
         </tags>
       
@@ -622,9 +622,9 @@
       
         <tags>
             
-            <tag> C++ </tag>
-            
             <tag> leetcode </tag>
+            
+            <tag> C++ </tag>
             
         </tags>
       
@@ -649,9 +649,9 @@
       
         <tags>
             
-            <tag> C++ </tag>
-            
             <tag> leetcode </tag>
+            
+            <tag> C++ </tag>
             
         </tags>
       
@@ -795,31 +795,6 @@
     
     
     <entry>
-      <title>04 Classification</title>
-      <link href="blog/04%20Classification%EF%BC%88%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98%EF%BC%89/"/>
-      <url>blog/04%20Classification%EF%BC%88%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98%EF%BC%89/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Classification"><a href="#Classification" class="headerlink" title="Classification"></a>Classification</h2><h3 id="如何做分类"><a href="#如何做分类" class="headerlink" title="如何做分类"></a>如何做分类</h3><ul><li><p>当作预测数值</p><p>每个分类之间是无关的，但预测的数值之间却存在关系的远近，例如将预测结果0当作分类A，预测结果1当作分类B，预测结果100当作分类C，显然预测数值1和2之间关系要比1和100更接近，但分类A,B,C之间是不存在这种关系的，因此这种做法并不合适。</p></li><li><p>把每个分类结果当作独热码</p></li></ul><h3 id="softmax"><a href="#softmax" class="headerlink" title="softmax"></a>softmax</h3><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052116882.PNG" alt="softmax"></p><p>Classification需要对结果进行一次softmax，softmax步骤如下：</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052116883.PNG" alt="soft-max"></p><p>这样得到的结果，全都在0-1，且和为1</p><h3 id="Loss-of-Classification"><a href="#Loss-of-Classification" class="headerlink" title="Loss of Classification"></a>Loss of Classification</h3><p>在进行分类时对Loss的定义</p><ol><li><p>Mean Square Error(MSE)</p><script type="math/tex; mode=display">e = \sum_i(\widehat{y}_i-\dot{y_i})^2</script></li><li><p>Cross-entropy </p><script type="math/tex; mode=display">e = -\sum_i\widehat{y}_iln\dot{y_i}</script></li></ol><p><strong>分类时cross-entroy更适用。</strong></p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052116884.PNG" alt="cross"></p><p>如上图所示，MSE的结果在Loss比较大时grandient比较小，更难update到loss小的地方，而cross-entropy的结果更有利于优化（optimization）。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 深度学习笔记 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 深度学习 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>03 训练神经网络的一些tips</title>
       <link href="blog/03%20%E8%AE%AD%E7%BB%83%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%80%E4%BA%9Btips/"/>
       <url>blog/03%20%E8%AE%AD%E7%BB%83%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%80%E4%BA%9Btips/</url>
@@ -845,11 +820,11 @@
     
     
     <entry>
-      <title>06 self-attention</title>
-      <link href="blog/06%20self-attention/"/>
-      <url>blog/06%20self-attention/</url>
+      <title>05 卷积神经网络(CNN)</title>
+      <link href="blog/05%20%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C(CNN)/"/>
+      <url>blog/05%20%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C(CNN)/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="self-attention"><a href="#self-attention" class="headerlink" title="self-attention"></a>self-attention</h2><p>输入：一个向量的集合（例如：音频、语句、图、分子等）</p><p>输出： </p><ul><li><p>case1：输入输出长度一样（例如文字处理过程中的词性标注）</p></li><li><p>case2：只输出一个label</p></li><li><p>case3： 不知道需要输出多少个label</p></li></ul><h3 id="为什么要使用self-attention"><a href="#为什么要使用self-attention" class="headerlink" title="为什么要使用self attention"></a>为什么要使用self attention</h3><p>对于case1，即输入输出长度一样的情况，又可以称为Sequence Labeling</p><p>如何解决这种问题？如果按照之前的，只使用全连接层（即每个向量经过各种Neuron得到最终的输出）得到的结果有着巨大的缺陷，因为这样在每个向量计算过程实际只考虑了一个向量，但是实际上，每个向量的输出与输入集合中其他向量都是存在关系的（例如，“I saw a saw”，这个句子中两个“saw”有着不同的词性，但只用全连接层输出可能相同），这种关系是我们需要考虑的。</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052117803.PNG" alt="isawasaw"></p><p>如何才能考虑到这种关系的存在呢？在这里引入了self attention。self attention的输入和输出个数是相同的，每个输入向量都会对应一个输出向量（该输出向量是考虑了该向量与输入集合内其他向量之间关系的），之后将self attention得到的输出向量作为后续网络层的输入，就可以达到实现考虑输入集合内关系的效果。</p><h3 id="如何实现self-attention"><a href="#如何实现self-attention" class="headerlink" title="如何实现self attention"></a>如何实现self attention</h3><h4 id="计算两个向量相关性的方法"><a href="#计算两个向量相关性的方法" class="headerlink" title="计算两个向量相关性的方法"></a>计算两个向量相关性的方法</h4><p>dot product &amp; additive</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305101644150.png" alt="计算attention"></p><h4 id="计算self-attention输出的过程"><a href="#计算self-attention输出的过程" class="headerlink" title="计算self attention输出的过程"></a>计算self attention输出的过程</h4><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052117804.PNG" alt="计算selfattention输出"></p><p>如上图所示，解释了如果得到其中一个输出（$b^1$）的过程,而得到其他输出的过程与之类似。</p><p>而整个过程的矩阵表达如下：</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052117805.PNG" alt="selfattention矩阵"></p><p>在这个过程中，只有三个变换所需矩阵是要经过学习得到的（$W^q,W^k,W^v$）。</p><h4 id="multi-head-self-attention"><a href="#multi-head-self-attention" class="headerlink" title="multi-head self-attention"></a>multi-head self-attention</h4><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052117806.PNG" alt="mutiself"></p><p>在有些情况下，输入集合内向量的关系并不是只有一种类型，因此我们可以使用multi-head self-attention，这样可以考虑多种关系。实现过程是在原有self-attention的基础上增加$W^q,W^k,W^v$的数量。</p><h4 id="positional-encoding"><a href="#positional-encoding" class="headerlink" title="positional encoding"></a>positional encoding</h4><p>在某些情况下，输入集合内向量的位置也是很重要的（例如句子中第一个单词往往是主语），</p><p>因此在这种情况下，我们可以使用一组向量（$e^1,e^2,…，e^i)$存储位置，每个位置对应的向量是不同的，将其作为输入，这样在学习过程中就会考虑位置的因素。（如下图）</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052117807.PNG" alt="position"></p><h3 id="self-attention的应用"><a href="#self-attention的应用" class="headerlink" title="self attention的应用"></a>self attention的应用</h3><h4 id="语言识别"><a href="#语言识别" class="headerlink" title="语言识别"></a>语言识别</h4><p><strong>truncated self-attention</strong></p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052117808.PNG" alt=""></p><p>由于音频的数据量是很庞大的，如果全都拿来做self attention，运算量较大，因此我们可以每次只考虑附近几个向量之间的关系，即truncated self-attention，如上图所示。</p><h4 id="影像处理"><a href="#影像处理" class="headerlink" title="影像处理"></a>影像处理</h4><p><strong>self-attention VS CNN</strong></p><p>CNN是self attention的一个特例，之前说CNN中是把一个图片拼成一个向量作为输入，实际上，也可以将其作为一个向量的集合作为输入，使用self attention解决。</p><h4 id="图处理"><a href="#图处理" class="headerlink" title="图处理"></a>图处理</h4><p>在图中节点之间是否有连线实际上说明了节点之间的关系，所以我们可以只考虑之间有连线的节点之间的关系。</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052117809.PNG" alt="GNN"></p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="卷积神经网络-CNN"><a href="#卷积神经网络-CNN" class="headerlink" title="卷积神经网络(CNN)"></a>卷积神经网络(CNN)</h2><p>输入：图片（默认大小是一致的）</p><p>输出：独热码（每个独热码代表其中一种分类）</p><h3 id="卷积神经网络的第一种表达"><a href="#卷积神经网络的第一种表达" class="headerlink" title="卷积神经网络的第一种表达"></a>卷积神经网络的第一种表达</h3><h4 id="如何把一张影响变成输入？"><a href="#如何把一张影响变成输入？" class="headerlink" title="如何把一张影响变成输入？"></a>如何把一张影响变成输入？</h4><p>每张图片实际上是一个三维的tensor，三个维度：长、宽、层数（例如：RGB三个channels），将其拉直成一个向量，即可实现影像输入（如下图所示）</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118668.PNG" alt="将图片作为输入"></p><p>在拉直得到的向量中，每个元素的数值即代表了某一个位置某一种颜色的强度。</p><h4 id="简化"><a href="#简化" class="headerlink" title="简化"></a>简化</h4><p>如果安装原来的Fully Connected Network对输入的向量进行处理，太过复杂，会增大overfitting的风险，那么该如此简化呢？</p><h5 id="每个Neuron只负责图片的一小部分"><a href="#每个Neuron只负责图片的一小部分" class="headerlink" title="每个Neuron只负责图片的一小部分"></a>每个Neuron只负责图片的一小部分</h5><p>每个Neuron的图片的部分称为一个receptive field，不同Neuron的receptive field可以重叠，多个Neuron可以负责一个receptive field（因为一些图片的特征可能不只有一个）。</p><p><strong>最经典的receptive field安排方式</strong></p><p>每个Neuron负责所有channels ，长和宽一般3x3，一个receptive field移动stride（自定义）即可得到另一个receptive field（stride自定义），移动时超出范围，可补0。</p><h5 id="共享参数"><a href="#共享参数" class="headerlink" title="共享参数"></a>共享参数</h5><p>一个特征可能同时出现一个图片的不同位置；因为我们可以让负责这一特征的Neuron共享参数</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118669.PNG" alt="共享参数"></p><p>每个receive field都有一组neuron在负责，不同receive field的对应neuron共享参数，我们将每一个neuron的参数称为一个fitler（卷积核）</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118670.PNG" alt="如何共享参数"></p><p>在经过2.1和2.2后的网络层就是<strong>卷积层</strong>，使用卷积层的神经网络即为<strong>卷积神经网络</strong>。</p><h3 id="卷积神经网络的另一种表达"><a href="#卷积神经网络的另一种表达" class="headerlink" title="卷积神经网络的另一种表达"></a>卷积神经网络的另一种表达</h3><p><strong>feature map</strong></p><p>用n个filter对图片的特征进行抓取，每个filter负责一个特征。在一个filter的抓取全部完成后可以得到一个一层的tensor（如下图）。</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118671.PNG" alt="filter1"></p><p>而n个filter全部进行一遍后既可得到一个n层的tensor，即为一个feature map。而feature map又可以看出一个拥有n个channels的图片，作为下一层的输入，而下一层的filter也要是一个n个channels的tensor（如下图）。</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118672.PNG" alt="多层卷积"></p><p>如果使用3*3的filter是否可以抓取原图像中更大部分才能体现的特征？答案是可以的，因为使用了多层卷积之后得到的feature map中可以一个元素就能体现出原来很大部分的特征。</p><h3 id="pooling"><a href="#pooling" class="headerlink" title="pooling"></a>pooling</h3><p>将一个比较大图片做一个subsampling（如把偶数的行、奇数列去除），图片变为原来的1/4，但不会影响图片特征的提取</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118673.PNG" alt="pool"></p><p>如何做pooling？</p><p>将每个filter经过提取后得到的tensor中元素分成几个小组，从组中选出有代表性的元素留下来，其他元素去除（如下图）</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118674.PNG" alt="pooling"></p><p>max pooling：选择最大的元素作为代表。</p><p>pooling会对精确度造成损失，因此也<strong>可以不用</strong>。</p><h3 id="CNN图片识别流程"><a href="#CNN图片识别流程" class="headerlink" title="CNN图片识别流程"></a>CNN图片识别流程</h3><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118675.PNG" alt="THE WHOLE CNN"></p><p>经过卷积和池化（pooling，可以不用）后的输出经过flatten可以得到一个向量，再经过全连接层和softmax即可得到最后的输出</p>]]></content>
       
       
       <categories>
@@ -870,11 +845,36 @@
     
     
     <entry>
-      <title>05 卷积神经网络(CNN)</title>
-      <link href="blog/05%20%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C(CNN)/"/>
-      <url>blog/05%20%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C(CNN)/</url>
+      <title>04 Classification</title>
+      <link href="blog/04%20Classification%EF%BC%88%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98%EF%BC%89/"/>
+      <url>blog/04%20Classification%EF%BC%88%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98%EF%BC%89/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="卷积神经网络-CNN"><a href="#卷积神经网络-CNN" class="headerlink" title="卷积神经网络(CNN)"></a>卷积神经网络(CNN)</h2><p>输入：图片（默认大小是一致的）</p><p>输出：独热码（每个独热码代表其中一种分类）</p><h3 id="卷积神经网络的第一种表达"><a href="#卷积神经网络的第一种表达" class="headerlink" title="卷积神经网络的第一种表达"></a>卷积神经网络的第一种表达</h3><h4 id="如何把一张影响变成输入？"><a href="#如何把一张影响变成输入？" class="headerlink" title="如何把一张影响变成输入？"></a>如何把一张影响变成输入？</h4><p>每张图片实际上是一个三维的tensor，三个维度：长、宽、层数（例如：RGB三个channels），将其拉直成一个向量，即可实现影像输入（如下图所示）</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118668.PNG" alt="将图片作为输入"></p><p>在拉直得到的向量中，每个元素的数值即代表了某一个位置某一种颜色的强度。</p><h4 id="简化"><a href="#简化" class="headerlink" title="简化"></a>简化</h4><p>如果安装原来的Fully Connected Network对输入的向量进行处理，太过复杂，会增大overfitting的风险，那么该如此简化呢？</p><h5 id="每个Neuron只负责图片的一小部分"><a href="#每个Neuron只负责图片的一小部分" class="headerlink" title="每个Neuron只负责图片的一小部分"></a>每个Neuron只负责图片的一小部分</h5><p>每个Neuron的图片的部分称为一个receptive field，不同Neuron的receptive field可以重叠，多个Neuron可以负责一个receptive field（因为一些图片的特征可能不只有一个）。</p><p><strong>最经典的receptive field安排方式</strong></p><p>每个Neuron负责所有channels ，长和宽一般3x3，一个receptive field移动stride（自定义）即可得到另一个receptive field（stride自定义），移动时超出范围，可补0。</p><h5 id="共享参数"><a href="#共享参数" class="headerlink" title="共享参数"></a>共享参数</h5><p>一个特征可能同时出现一个图片的不同位置；因为我们可以让负责这一特征的Neuron共享参数</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118669.PNG" alt="共享参数"></p><p>每个receive field都有一组neuron在负责，不同receive field的对应neuron共享参数，我们将每一个neuron的参数称为一个fitler（卷积核）</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118670.PNG" alt="如何共享参数"></p><p>在经过2.1和2.2后的网络层就是<strong>卷积层</strong>，使用卷积层的神经网络即为<strong>卷积神经网络</strong>。</p><h3 id="卷积神经网络的另一种表达"><a href="#卷积神经网络的另一种表达" class="headerlink" title="卷积神经网络的另一种表达"></a>卷积神经网络的另一种表达</h3><p><strong>feature map</strong></p><p>用n个filter对图片的特征进行抓取，每个filter负责一个特征。在一个filter的抓取全部完成后可以得到一个一层的tensor（如下图）。</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118671.PNG" alt="filter1"></p><p>而n个filter全部进行一遍后既可得到一个n层的tensor，即为一个feature map。而feature map又可以看出一个拥有n个channels的图片，作为下一层的输入，而下一层的filter也要是一个n个channels的tensor（如下图）。</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118672.PNG" alt="多层卷积"></p><p>如果使用3*3的filter是否可以抓取原图像中更大部分才能体现的特征？答案是可以的，因为使用了多层卷积之后得到的feature map中可以一个元素就能体现出原来很大部分的特征。</p><h3 id="pooling"><a href="#pooling" class="headerlink" title="pooling"></a>pooling</h3><p>将一个比较大图片做一个subsampling（如把偶数的行、奇数列去除），图片变为原来的1/4，但不会影响图片特征的提取</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118673.PNG" alt="pool"></p><p>如何做pooling？</p><p>将每个filter经过提取后得到的tensor中元素分成几个小组，从组中选出有代表性的元素留下来，其他元素去除（如下图）</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118674.PNG" alt="pooling"></p><p>max pooling：选择最大的元素作为代表。</p><p>pooling会对精确度造成损失，因此也<strong>可以不用</strong>。</p><h3 id="CNN图片识别流程"><a href="#CNN图片识别流程" class="headerlink" title="CNN图片识别流程"></a>CNN图片识别流程</h3><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052118675.PNG" alt="THE WHOLE CNN"></p><p>经过卷积和池化（pooling，可以不用）后的输出经过flatten可以得到一个向量，再经过全连接层和softmax即可得到最后的输出</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Classification"><a href="#Classification" class="headerlink" title="Classification"></a>Classification</h2><h3 id="如何做分类"><a href="#如何做分类" class="headerlink" title="如何做分类"></a>如何做分类</h3><ul><li><p>当作预测数值</p><p>每个分类之间是无关的，但预测的数值之间却存在关系的远近，例如将预测结果0当作分类A，预测结果1当作分类B，预测结果100当作分类C，显然预测数值1和2之间关系要比1和100更接近，但分类A,B,C之间是不存在这种关系的，因此这种做法并不合适。</p></li><li><p>把每个分类结果当作独热码</p></li></ul><h3 id="softmax"><a href="#softmax" class="headerlink" title="softmax"></a>softmax</h3><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052116882.PNG" alt="softmax"></p><p>Classification需要对结果进行一次softmax，softmax步骤如下：</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052116883.PNG" alt="soft-max"></p><p>这样得到的结果，全都在0-1，且和为1</p><h3 id="Loss-of-Classification"><a href="#Loss-of-Classification" class="headerlink" title="Loss of Classification"></a>Loss of Classification</h3><p>在进行分类时对Loss的定义</p><ol><li><p>Mean Square Error(MSE)</p><script type="math/tex; mode=display">e = \sum_i(\widehat{y}_i-\dot{y_i})^2</script></li><li><p>Cross-entropy </p><script type="math/tex; mode=display">e = -\sum_i\widehat{y}_iln\dot{y_i}</script></li></ol><p><strong>分类时cross-entroy更适用。</strong></p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052116884.PNG" alt="cross"></p><p>如上图所示，MSE的结果在Loss比较大时grandient比较小，更难update到loss小的地方，而cross-entropy的结果更有利于优化（optimization）。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 深度学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 深度学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>06 self-attention</title>
+      <link href="blog/06%20self-attention/"/>
+      <url>blog/06%20self-attention/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="self-attention"><a href="#self-attention" class="headerlink" title="self-attention"></a>self-attention</h2><p>输入：一个向量的集合（例如：音频、语句、图、分子等）</p><p>输出： </p><ul><li><p>case1：输入输出长度一样（例如文字处理过程中的词性标注）</p></li><li><p>case2：只输出一个label</p></li><li><p>case3： 不知道需要输出多少个label</p></li></ul><h3 id="为什么要使用self-attention"><a href="#为什么要使用self-attention" class="headerlink" title="为什么要使用self attention"></a>为什么要使用self attention</h3><p>对于case1，即输入输出长度一样的情况，又可以称为Sequence Labeling</p><p>如何解决这种问题？如果按照之前的，只使用全连接层（即每个向量经过各种Neuron得到最终的输出）得到的结果有着巨大的缺陷，因为这样在每个向量计算过程实际只考虑了一个向量，但是实际上，每个向量的输出与输入集合中其他向量都是存在关系的（例如，“I saw a saw”，这个句子中两个“saw”有着不同的词性，但只用全连接层输出可能相同），这种关系是我们需要考虑的。</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052117803.PNG" alt="isawasaw"></p><p>如何才能考虑到这种关系的存在呢？在这里引入了self attention。self attention的输入和输出个数是相同的，每个输入向量都会对应一个输出向量（该输出向量是考虑了该向量与输入集合内其他向量之间关系的），之后将self attention得到的输出向量作为后续网络层的输入，就可以达到实现考虑输入集合内关系的效果。</p><h3 id="如何实现self-attention"><a href="#如何实现self-attention" class="headerlink" title="如何实现self attention"></a>如何实现self attention</h3><h4 id="计算两个向量相关性的方法"><a href="#计算两个向量相关性的方法" class="headerlink" title="计算两个向量相关性的方法"></a>计算两个向量相关性的方法</h4><p>dot product &amp; additive</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305101644150.png" alt="计算attention"></p><h4 id="计算self-attention输出的过程"><a href="#计算self-attention输出的过程" class="headerlink" title="计算self attention输出的过程"></a>计算self attention输出的过程</h4><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052117804.PNG" alt="计算selfattention输出"></p><p>如上图所示，解释了如果得到其中一个输出（$b^1$）的过程,而得到其他输出的过程与之类似。</p><p>而整个过程的矩阵表达如下：</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052117805.PNG" alt="selfattention矩阵"></p><p>在这个过程中，只有三个变换所需矩阵是要经过学习得到的（$W^q,W^k,W^v$）。</p><h4 id="multi-head-self-attention"><a href="#multi-head-self-attention" class="headerlink" title="multi-head self-attention"></a>multi-head self-attention</h4><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052117806.PNG" alt="mutiself"></p><p>在有些情况下，输入集合内向量的关系并不是只有一种类型，因此我们可以使用multi-head self-attention，这样可以考虑多种关系。实现过程是在原有self-attention的基础上增加$W^q,W^k,W^v$的数量。</p><h4 id="positional-encoding"><a href="#positional-encoding" class="headerlink" title="positional encoding"></a>positional encoding</h4><p>在某些情况下，输入集合内向量的位置也是很重要的（例如句子中第一个单词往往是主语），</p><p>因此在这种情况下，我们可以使用一组向量（$e^1,e^2,…，e^i)$存储位置，每个位置对应的向量是不同的，将其作为输入，这样在学习过程中就会考虑位置的因素。（如下图）</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052117807.PNG" alt="position"></p><h3 id="self-attention的应用"><a href="#self-attention的应用" class="headerlink" title="self attention的应用"></a>self attention的应用</h3><h4 id="语言识别"><a href="#语言识别" class="headerlink" title="语言识别"></a>语言识别</h4><p><strong>truncated self-attention</strong></p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052117808.PNG" alt=""></p><p>由于音频的数据量是很庞大的，如果全都拿来做self attention，运算量较大，因此我们可以每次只考虑附近几个向量之间的关系，即truncated self-attention，如上图所示。</p><h4 id="影像处理"><a href="#影像处理" class="headerlink" title="影像处理"></a>影像处理</h4><p><strong>self-attention VS CNN</strong></p><p>CNN是self attention的一个特例，之前说CNN中是把一个图片拼成一个向量作为输入，实际上，也可以将其作为一个向量的集合作为输入，使用self attention解决。</p><h4 id="图处理"><a href="#图处理" class="headerlink" title="图处理"></a>图处理</h4><p>在图中节点之间是否有连线实际上说明了节点之间的关系，所以我们可以只考虑之间有连线的节点之间的关系。</p><p><img src="https://zjyimage.oss-cn-beijing.aliyuncs.com/202305052117809.PNG" alt="GNN"></p>]]></content>
       
       
       <categories>
@@ -974,6 +974,33 @@
     
     
     <entry>
+      <title>环形链表</title>
+      <link href="blog/%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/"/>
+      <url>blog/%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="环形链表"><a href="#环形链表" class="headerlink" title="环形链表"></a>环形链表</h2><p><a href="https://leetcode.cn/problems/linked-list-cycle-ii/submissions/">142. 环形链表 II - 力扣（LeetCode）</a></p><blockquote><p> 给定一个链表的头节点  head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。</p><p>如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。如果 pos 是 -1，则在该链表中没有环。注意：pos 不作为参数进行传递，仅仅是为了标识链表的实际情况。</p><p>不允许修改 链表。</p><p>输入：head = [3,2,0,-4], pos = 1<br>输出：返回索引为 1 的链表节点<br>解释：链表中有一个环，其尾部连接到第二个节点。</p></blockquote><h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><p>解一：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode(object):</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.next = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">detectCycle</span>(<span class="params">self, head</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type head: ListNode</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span> </span><br><span class="line">        p = ListNode(<span class="built_in">next</span> = head)</span><br><span class="line">        pos = <span class="number">0</span></span><br><span class="line">        lis = []</span><br><span class="line">        <span class="keyword">while</span> p.<span class="built_in">next</span> != <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> p.<span class="built_in">next</span> <span class="keyword">in</span> lis:</span><br><span class="line">                <span class="keyword">return</span> p.<span class="built_in">next</span></span><br><span class="line">            lis.append(p.<span class="built_in">next</span>)</span><br><span class="line">            p = p.<span class="built_in">next</span></span><br><span class="line">            pos += <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure><p>解二：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode(object):</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.next = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">detectCycle</span>(<span class="params">self, head</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type head: ListNode</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span> </span><br><span class="line">        p,q = head,head</span><br><span class="line">        pos = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> p != <span class="literal">None</span> <span class="keyword">and</span> p.<span class="built_in">next</span>!=<span class="literal">None</span>:</span><br><span class="line">            p = p.<span class="built_in">next</span>.<span class="built_in">next</span></span><br><span class="line">            q = q.<span class="built_in">next</span></span><br><span class="line">            pos += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> p == q:</span><br><span class="line">                p = head</span><br><span class="line">                <span class="keyword">while</span> p != q:</span><br><span class="line">                    p = p.<span class="built_in">next</span></span><br><span class="line">                    q = q.<span class="built_in">next</span></span><br><span class="line">                    pos += <span class="number">1</span></span><br><span class="line">                <span class="keyword">return</span> p</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure><h3 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h3><ol><li>解一将所有遍历过的链点都存储在一个列表中，判断新遍历的列表是否在列表中，若已在列表中，就说明在这里产生了环；</li><li>解二使用了双指针法，当快指针与慢指针相遇时，设慢指针走了k，与环起点距离为m，则快指针走了2k，且从相遇点到环起点的距离$L_1$和从head到环起点的距离$L_2$均为k-m，这时我们可以设置快慢指针中一个指针指向head，两指针以同样速率移动，当两指针相遇，则相遇点恰好为环的起点。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> leetcode </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>移除元素</title>
       <link href="blog/%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/"/>
       <url>blog/%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/</url>
@@ -1006,33 +1033,6 @@
       <url>blog/%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="移除链表元素"><a href="#移除链表元素" class="headerlink" title="移除链表元素"></a>移除链表元素</h2><p><a href="https://leetcode.cn/problems/remove-linked-list-elements/">203. 移除链表元素</a></p><blockquote><p>给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val == val 的节点，并返回 新的头节点 。</p><p>示例 1：</p><p>输入：head = [1,2,6,3,4,5,6], val = 6<br>输出：[1,2,3,4,5]</p></blockquote><h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><p>解一：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment">#class ListNode(object):</span></span><br><span class="line">    <span class="comment">#def __init__(self, val=0, next=None):</span></span><br><span class="line">        <span class="comment">#self.val = val</span></span><br><span class="line">        <span class="comment">#self.next = next</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">removeElements</span>(<span class="params">self, head, val</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type head: ListNode</span></span><br><span class="line"><span class="string">        :type val: int</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        p = ListNode(<span class="built_in">next</span>=head)</span><br><span class="line">        p = head</span><br><span class="line">        <span class="keyword">if</span> head == <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">return</span> head</span><br><span class="line">        <span class="keyword">while</span> p.<span class="built_in">next</span> != <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> p.val == val:</span><br><span class="line">                head = p.<span class="built_in">next</span></span><br><span class="line">                p = p.<span class="built_in">next</span></span><br><span class="line">            <span class="keyword">elif</span> p.<span class="built_in">next</span>.val == val:</span><br><span class="line">                p.<span class="built_in">next</span> = p.<span class="built_in">next</span>.<span class="built_in">next</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                p = p.<span class="built_in">next</span> </span><br><span class="line">        <span class="keyword">if</span> p.val == val:</span><br><span class="line">            p = p.<span class="built_in">next</span></span><br><span class="line">            head = p</span><br><span class="line">        <span class="keyword">return</span> head</span><br></pre></td></tr></table></figure><p>解二</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode(object):</span></span><br><span class="line"><span class="comment">#     def __init__(self, val=0, next=None):</span></span><br><span class="line"><span class="comment">#         self.val = val</span></span><br><span class="line"><span class="comment">#         self.next = next</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">removeElements</span>(<span class="params">self, head, val</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type head: ListNode</span></span><br><span class="line"><span class="string">        :type val: int</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        sta = ListNode(<span class="built_in">next</span>=head)</span><br><span class="line">        p = sta</span><br><span class="line">        <span class="keyword">while</span> p.<span class="built_in">next</span> != <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> p.<span class="built_in">next</span>.val == val:</span><br><span class="line">                p.<span class="built_in">next</span> = p.<span class="built_in">next</span>.<span class="built_in">next</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                p = p.<span class="built_in">next</span> </span><br><span class="line">        <span class="keyword">return</span> sta.<span class="built_in">next</span></span><br></pre></td></tr></table></figure><h3 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h3><ol><li>python中不可变数据类型有：整型、浮点型、元组（改变变量值后，变量指向内存位置改变即为不可变类型）；</li><li>python中也是有指针的，python采用基于值的内存管理模式，每个变量都可以理解为指针（这也是为什么要用a = b[:]来创建一个不会影响原列表的列表副本），当指向不可变数据类型的变量改变值，会发生指向内存位置的改变；</li><li>解二中将后续移动的指针定义在head前面，即p.next = head，这样之后就不需要将链表首端和尾端为需要删除链点当作特殊情况。</li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> leetcode笔记 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> leetcode </tag>
-            
-            <tag> Python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>环形链表</title>
-      <link href="blog/%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/"/>
-      <url>blog/%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="环形链表"><a href="#环形链表" class="headerlink" title="环形链表"></a>环形链表</h2><p><a href="https://leetcode.cn/problems/linked-list-cycle-ii/submissions/">142. 环形链表 II - 力扣（LeetCode）</a></p><blockquote><p> 给定一个链表的头节点  head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。</p><p>如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。如果 pos 是 -1，则在该链表中没有环。注意：pos 不作为参数进行传递，仅仅是为了标识链表的实际情况。</p><p>不允许修改 链表。</p><p>输入：head = [3,2,0,-4], pos = 1<br>输出：返回索引为 1 的链表节点<br>解释：链表中有一个环，其尾部连接到第二个节点。</p></blockquote><h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><p>解一：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode(object):</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.next = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">detectCycle</span>(<span class="params">self, head</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type head: ListNode</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span> </span><br><span class="line">        p = ListNode(<span class="built_in">next</span> = head)</span><br><span class="line">        pos = <span class="number">0</span></span><br><span class="line">        lis = []</span><br><span class="line">        <span class="keyword">while</span> p.<span class="built_in">next</span> != <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> p.<span class="built_in">next</span> <span class="keyword">in</span> lis:</span><br><span class="line">                <span class="keyword">return</span> p.<span class="built_in">next</span></span><br><span class="line">            lis.append(p.<span class="built_in">next</span>)</span><br><span class="line">            p = p.<span class="built_in">next</span></span><br><span class="line">            pos += <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure><p>解二：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode(object):</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.next = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">detectCycle</span>(<span class="params">self, head</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type head: ListNode</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span> </span><br><span class="line">        p,q = head,head</span><br><span class="line">        pos = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> p != <span class="literal">None</span> <span class="keyword">and</span> p.<span class="built_in">next</span>!=<span class="literal">None</span>:</span><br><span class="line">            p = p.<span class="built_in">next</span>.<span class="built_in">next</span></span><br><span class="line">            q = q.<span class="built_in">next</span></span><br><span class="line">            pos += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> p == q:</span><br><span class="line">                p = head</span><br><span class="line">                <span class="keyword">while</span> p != q:</span><br><span class="line">                    p = p.<span class="built_in">next</span></span><br><span class="line">                    q = q.<span class="built_in">next</span></span><br><span class="line">                    pos += <span class="number">1</span></span><br><span class="line">                <span class="keyword">return</span> p</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure><h3 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h3><ol><li>解一将所有遍历过的链点都存储在一个列表中，判断新遍历的列表是否在列表中，若已在列表中，就说明在这里产生了环；</li><li>解二使用了双指针法，当快指针与慢指针相遇时，设慢指针走了k，与环起点距离为m，则快指针走了2k，且从相遇点到环起点的距离$L_1$和从head到环起点的距离$L_2$均为k-m，这时我们可以设置快慢指针中一个指针指向head，两指针以同样速率移动，当两指针相遇，则相遇点恰好为环的起点。</li></ol>]]></content>
       
       
       <categories>
